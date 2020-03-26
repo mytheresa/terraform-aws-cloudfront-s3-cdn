@@ -4,6 +4,12 @@ variable "namespace" {
   default     = ""
 }
 
+variable "namespace" {
+  type        = bool
+  description = "Use existing origin"
+  default     = true
+}
+
 variable "stage" {
   type        = string
   description = "Stage (e.g. `prod`, `dev`, `staging`)"
