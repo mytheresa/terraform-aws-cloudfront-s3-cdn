@@ -103,7 +103,7 @@ data "aws_region" "current" {
 }
 
 resource "aws_s3_bucket" "origin" {
-  count         = local.using_existing_origin ? 0 : 1
+  count         = var.use_existing_origin ? 0 : 1
   bucket        = module.origin_label.id
   acl           = "private"
   tags          = module.origin_label.tags
