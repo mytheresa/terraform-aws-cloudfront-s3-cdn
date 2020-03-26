@@ -4,7 +4,7 @@ variable "namespace" {
   default     = ""
 }
 
-variable "namespace" {
+variable "use_existing_origin" {
   type        = bool
   description = "Use existing origin"
   default     = true
